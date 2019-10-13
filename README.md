@@ -25,7 +25,7 @@ djnago_poll_app/
     migrations/
       0001_initial.py
       __init__.py
-    __init.py
+    __init__.py
     admin.py
     apps.py
     models.py
