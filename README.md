@@ -21,7 +21,7 @@ djnago_poll_app/
   manage.py
   READEME.md
   requirements.txt
-  blog/
+  polls/
     migrations/
       0001_initial.py
       __init__.py
