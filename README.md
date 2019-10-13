@@ -30,6 +30,7 @@ djnago_poll_app/
     apps.py
     models.py
     tests.py
+    urls.py
     views.py
   mysite/
     __init__.py
