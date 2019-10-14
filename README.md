@@ -6,8 +6,6 @@
 ## DB
 `python manage.py migrate`
 
-`python manage.py migrate blog`
-
 ## サーバー起動
 `python manage.py runserver`
 
@@ -25,6 +23,11 @@ djnago_poll_app/
     migrations/
       0001_initial.py
       __init__.py
+    templates/
+      polls/
+        detail.html
+        index.html
+        results.html
     __init__.py
     admin.py
     apps.py
