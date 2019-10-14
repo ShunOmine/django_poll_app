@@ -69,3 +69,17 @@ class QuestionIndexViewsTests(TestCase):
       ['<Question: Past question 2.>', '<Question: Past question 1.>']
     )
 
+# detail view tests
+class QuestionDetailViewsTests(TestCase):
+  def test_future_question(self):
+    future_question = create_question(question_text="Future question.", days=5)
+    url = reverse('polls:detail', args=(future_question.id))
+    response = self.client.get(url)
+    self.assertEqual(response.status_code, 200)
+
+  def test_past_question(self):
+    past_question = create_question(question_text="Future question.", days=-5)
+    url = reverse('polls:detail', args=(past_question.id))
+    response = self.client.get(url)
+    self.assertEqual(response.status_code, 200)
+
