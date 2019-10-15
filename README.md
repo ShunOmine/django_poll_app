@@ -28,6 +28,12 @@ djnago_poll_app/
         detail.html
         index.html
         results.html
+      admin/
+        base_site.html
+    static/
+      polls/
+        style.css
+        images/
     __init__.py
     admin.py
     apps.py
